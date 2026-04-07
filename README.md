@@ -1,22 +1,38 @@
-# 🟢 SystemZero
-> **High-Performance Optimization Script for Linux**
-> *Author: DavidEngineer (ortiz10m)*
+# ⚡ SystemZero: Native Linux Optimizer
 
-SystemZero is a bash script designed to optimize low-spec computers (like 2GB RAM setups). It forces the kernel to drop caches and removes unused dependencies to free up resources immediately.
+**SystemZero** is a high-performance, low-level optimization tool written in C++ for Linux systems. Designed specifically for machines with extremely limited resources, it bypasses the overhead of traditional shell scripts to interact directly with the Kernel.
+
+If your hardware is old or your RAM is scarce, SystemZero ensures your system stays lean and fast.
 
 ---
 
-## 🚀 Installation & Usage
+## 🚀 Why C++?
+Unlike common bash scripts, SystemZero is compiled into machine code. 
+- **Zero Overhead:** No interpreter needed.
+- **Kernel Intervener:** Uses native POSIX calls (`sync`) and direct file streams to manage memory.
+- **Silent & Efficient:** Designed to work in the background without cluttering your terminal.
 
-### 1. Download the script
-Clone this repository or download the `systemzero.sh` file directly.
+## 🛠️ Features
+- **Native RAM Wipe:** Forces the Kernel to drop unnecessary caches and buffer memory.
+- **System Purge:** Automatically identifies and removes orphaned dependencies and APT junk.
+- **Resource Focused:** Optimized with the `-O3` flag for maximum execution speed.
+
+## 📥 Installation
+
+You need `g++` (GNU C++ Compiler) installed on your Linux distribution.
+
 ```bash
+# Clone the repository
 git clone [https://github.com/ortiz10m/SystemZero.git](https://github.com/ortiz10m/SystemZero.git)
+
+# Enter the directory
 cd SystemZero
-Grant Permissions (Important!)
-Linux needs to know this file is safe to run. Run this command once:
-chmod +x systemzero.sh
-Run the Optimizer
-You need administrator privileges (sudo) to clean RAM.
-sudo ./systemzero.sh
-Verified on: LocOS, AntiX, Debian.
+
+# Compile the native binary
+g++ -O3 systemzero.cpp -o systemzero
+
+## 🧠 Philosophy
+In a world of bloated software, efficiency is a revolutionary act. SystemZero is built on the principle that **if code runs fast on a decade-old machine, it runs fast anywhere.**
+
+---
+*Developed by [David Santiago Ortiz Rincon](https://github.com/ortiz10m) - Software Engineering Student*
