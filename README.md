@@ -36,3 +36,10 @@ In a world of bloated software, efficiency is a revolutionary act. SystemZero is
 
 ---
 *Developed by [David Santiago Ortiz Rincon](https://github.com/ortiz10m) - Software Engineering Student*
+
+
+## 🤝 Support & Connect
+If SystemZero helped your old hardware breathe again, consider giving this repository a ⭐! It helps the project grow and reach more developers who need it.
+
+* 🐛 **Found a bug or have an idea?** Open an Issue or send a Pull Request. Let's make this tool even lighter.
+* 🎥 **Follow the journey:** For more insights on software engineering, low-level optimization, and the mindset behind the code, join the community on my YouTube channel: **KROVIS**. Let's build efficiently.
