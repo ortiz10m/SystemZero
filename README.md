@@ -42,4 +42,4 @@ In a world of bloated software, efficiency is a revolutionary act. SystemZero is
 If SystemZero helped your old hardware breathe again, consider giving this repository a ⭐! It helps the project grow and reach more developers who need it.
 
 * 🐛 **Found a bug or have an idea?** Open an Issue or send a Pull Request. Let's make this tool even lighter.
-* 🎥 **Follow the journey:** For more insights on software engineering, low-level optimization, and the mindset behind the code, join the community on my YouTube channel: **KROVIS**. Let's build efficiently.
+* 🎥 **Follow the journey:** For discipline, motivation, and the stoic mindset needed to build great things (in code and in life), join the community on my YouTube channel: **DavOS**. Let's build efficiently.
