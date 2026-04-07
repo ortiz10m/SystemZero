@@ -2,6 +2,7 @@
 #include <fstream>   // For reading/writing files (Kernel communication)
 #include <unistd.h>  // For OS direct calls (sync, getuid)
 #include <cstdlib>   // For executing system processes (apt)
+#include <ctime>     // For system time and timestamp logging
 
 using namespace std;
 
@@ -54,9 +55,14 @@ int main() {
         return 1; // Exit with error code
     }
 
-    // Minimalist UI
+    // Get current system time for logging
+    time_t now = time(0);
+    char* dt = ctime(&now);
+
+    // Minimalist UI with Version and Timestamp
     cout << BLUE << "=======================================" << NC << endl;
-    cout << GREEN << "    SYSTEM ZERO - C++ NATIVE CORE      " << NC << endl;
+    cout << GREEN << "   SYSTEM ZERO v1.1 - NATIVE CORE      " << NC << endl;
+    cout << BLUE << "   Runtime: " << dt; // 'dt' automatically includes a newline
     cout << BLUE << "=======================================" << NC << endl;
 
     // Execution routine
